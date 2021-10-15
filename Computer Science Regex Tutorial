@@ -7,7 +7,16 @@ A regex, which is short for regular expression, is a sequence of characters that
 Matching an Email- /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 Regex. There are some tricky concepts to understand, but regular expressions can do some pretty incredible things. Here we will look at a particular example that of matching an email using regular expression. Then we will move on to breaking down components of regular expressions. 
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+* Caret ^ - the beginning of a string
+* () captures a group
+* $ - end of string or line
+* [] character set
+* a-z matches a character between a-z
+* 0-9 matches a character between 0-9
+* underscore = underscore
+* . is an escape character
+* = - dash = dash
+match one or more than one of the tokens
 
 ## Table of Contents
 
@@ -29,7 +38,14 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+Anchors belong to the family of regex tokens that don't match any characters, but that assert something about the string or the matching process. Anchors assert that the engine's current position in the string matches a well-determined location: for instance, the beginning of the string, or the end of a line.
+Anchors include symbols like a caret and a dollar sign at the end of the string or \A letter to describe word boundaries or lack thereof. The \letter means being a or end of a string.
+
 ### Quantifiers
+
+Quantifiers in regex include ?,*, +, and then items within curly braces/brackets.
+With quantifiers, you are basically trying to find how many times something happens or how many of certain things there are.
+It can operate within a group, or on a whole expression. The patterns will be tested in order.
 
 ### OR Operator
 
