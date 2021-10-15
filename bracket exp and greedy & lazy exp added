@@ -80,7 +80,16 @@ Expression flags change how the expression is interpreted. Flags follow the clos
 
 ### Bracket Expressions
 
+A bracket expression enclosed in square brackets is a regular expression that matches a single character, or collating element. If the initial character is a circumflex ^, then this bracket expression is complemented.
 ### Greedy and Lazy Match
+
+* 'Greedy' means matching the longest possible string.
+    A Greedy quantifier tells the engine to match as many instances of its quantified token or subpattern as possible. This behavior is called greedy.
+
+* 'Lazy' means matching the shortest possible string.
+    A lazy quantifier tells the engine to match as few of the quantified tokens as needed. As you'll see in the table below, a regular quantifier is made lazy by appending a ? question mark to it.
+
+See [link]"https://javascript.info/regexp-greedy-and-lazy for more detailed information.
 
 ### Boundaries
 
