@@ -107,6 +107,14 @@ For Example: `<([A-Z][0-9]*)\b[^>]*>.*?</\1>` This regex contains only one pair 
 
 ### Look-ahead and Look-behind
 
-## Author
+* `(?=ABC)` is a postive lookahead and it matches a group after the main expression without including it in the result.
+* `(?!ABC)` is a negitive lookahead and it specifies a group that can not match after the main expression (if it matches, the result is discarded)
 
+* `(?<=ABC>)` is a postive lookbehind and matches a group before the main expression without including it in the result.
+* `(?<!ABC)` is a negitive lookbehind and Specifies a group that can not match before the main expression (if it matches, the result is discarded).
+
+## Author
+Maria Soares
+Github: <https://github.com/soaresmaria>
+[Email: soaresmaria181@yahoo.com](mailto:soaresmaria181@yahoo.com)
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
